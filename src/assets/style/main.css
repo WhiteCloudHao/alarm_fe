@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: red !important;
+  }
+} */
+
+/* Hide scrollbar */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* VCalendar */
+.vc-container {
+  border: none !important;
+}
+.vc-day .vc-day-layer .vc-highlight,
+.vc-day-content:hover {
+  background-color: #e7cac2 !important;
+  color: #ffffff !important;
+}
+
+.vc-pane-container {
+  background-color: #ededed !important;
+}
